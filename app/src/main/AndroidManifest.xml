@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuvators.kuyatotolang.nuvatorsmactan"
+    android:installLocation="preferExternal" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        //Main Activity
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //Hardware Mode
+        <activity
+            android:name=".activityHardwareMode"
+            android:label="@string/title_activity_activity_hardware_mode" >
+            <intent-filter>
+                <action android:name="android.intent.action.activityHardwareMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        //AcceLDR
+        <activity
+            android:name=".activityHM_AcceLDR"
+            android:label="@string/title_activity_activity_hm__acce_ldr" >
+            <intent-filter>
+                <action android:name="android.intent.action.acceLDR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityHM_GasDetector"
+            android:label="@string/title_activity_activity_hm__gas_detector" >
+            <intent-filter>
+                <action android:name="android.intent.action.gasDetector" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityHM_TempSensor"
+            android:label="@string/title_activity_activity_hm__temp_sensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.TempSensor" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

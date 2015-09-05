@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NUvatorsMACTAN</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_hardware_mode">activityHardwareMode</string>
+    <string name="title_activity_activity_hm__acce_ldr">activityHM_AcceLDR</string>
+    <string name="title_activity_activity_hm__gas_detector">activityHM_GasDetector</string>
+    <string name="title_activity_activity_hm__temp_sensor">activityHM_TempSensor</string>
+</resources>

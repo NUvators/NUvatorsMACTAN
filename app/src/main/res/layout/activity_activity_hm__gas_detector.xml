@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nuvators.kuyatotolang.nuvatorsmactan.activityHM_GasDetector"
+    android:id="@+id/activityGasDetector"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gas Detector"
+        android:id="@+id/txtGasDetector"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This feature enables user to detect gas leakage and identify whether it is harmful or risk-free substance."
+        android:id="@+id/txtGasDetectorDescription"
+        android:layout_below="@+id/txtGasDetector"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gas Name"
+        android:id="@+id/txtGasName"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/txtGasDetectorDescription"
+        android:layout_alignRight="@+id/txtGasDetector"
+        android:layout_alignEnd="@+id/txtGasDetector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Is harmful?"
+        android:id="@+id/txtGasCharacteristic"
+        android:layout_alignTop="@+id/txtGasName"
+        android:layout_alignRight="@+id/txtGasDetectorDescription"
+        android:layout_alignEnd="@+id/txtGasDetectorDescription"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: Gas Identification function is limited. "
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtGasDetectorDescription"
+        android:layout_alignEnd="@+id/txtGasDetectorDescription" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run"
+        android:id="@+id/btnRunGasSensor"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/txtGasName"
+        android:layout_alignEnd="@+id/txtGasName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnStopGasSensor"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
